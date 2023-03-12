@@ -1,0 +1,41 @@
+.btn-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    background: black;
+    color: #fd5;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button.active{
+    background: #fd5;
+    color: black;
+}
+.prev:active,.frwd:active{
+    background: #fd5;
+    color: black;
+}
+
+@media (width<=980px) {
+   .btn-list{
+   scale:0.8;
+    margin: 20px;
+   }
+}
+@media (width<=670px){
+    .btn-list{
+        scale: 0.5;
+    }
+}
+@media (width<=420px) {
+    .btn-list{
+        scale: 0.5;
+        gap: 10px;
+    }
+}
